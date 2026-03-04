@@ -1,6 +1,6 @@
 https://binaries.sonarsource.com/
  cd /opt
-
+ sudo curl -O https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.5.0.107428.zip
 sudo apt-get install unzip
   sudo unzip sonarqube-8.3.0.34182.zip -d /opt/
   sudo mv /opt/sonarqube-8.3.0.34182/ /opt/sonarqube
@@ -11,7 +11,7 @@ sudo apt-get install unzip
   
   sudo vim /opt/sonarqube/conf/sonar.properties
   
-  ####Un-comment these lines and modify them as necessary.
+  ####Un-comment these lines and modify them as necessary. **** There will be a default username and password *****
 
       sonar.jdbc.username=admin
       sonar.jdbc.password=admin
